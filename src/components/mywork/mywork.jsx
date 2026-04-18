@@ -1,7 +1,7 @@
 import arrow_icon from '../../assets/arrow_icon.svg'
 import mywork_data from '../../assets/mywork_data'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import './MyWork.css'
+import './mywork.css'
 
 const MyWork = () => {
   return (

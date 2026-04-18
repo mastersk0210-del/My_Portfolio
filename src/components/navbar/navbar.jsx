@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import menu_close from '../../assets/menu_close.svg'
 import menu_open from '../../assets/menu_open.svg'
 import underline from '../../assets/nav_underline.svg'
-import './Navbar.css'
+import './navbar.css'
 
 const Navbar = () => {
   

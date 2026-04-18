@@ -2,7 +2,7 @@ import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import './Contact.css'
+import './contact.css'
 
 const Contact = () => {
 

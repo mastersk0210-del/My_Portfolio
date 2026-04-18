@@ -4,7 +4,7 @@ import github from '../../assets/github.svg'
 import insta from '../../assets/insta.svg'
 import linkedin from '../../assets/linkedin.svg'
 import whatsapp from '../../assets/whatsapp.svg'
-import './Footer.css'
+import './footer.css'
 
 const Footer = () => {
   return (

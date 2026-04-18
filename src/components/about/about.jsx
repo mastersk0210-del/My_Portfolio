@@ -1,6 +1,6 @@
 import profile_img from '../../assets/about_profile.jpeg'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import './About.css'
+import './about.css'
 
 
 const About = () => {
