@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "5547000000006078",
+      "name": "sk-portfolio",
+      "domain": {
+        "id": "50021672226",
+        "name": "sk-portfolio-60031525177.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60031525177",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

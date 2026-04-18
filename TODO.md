@@ -1,0 +1,9 @@
+- [x] Remove unused React import from src/app.jsx
+- [x] Remove unused React import from src/components/about/about.jsx
+- [x] Remove unused React import from src/components/contact/contact.jsx and fix unescaped entities
+- [x] Remove unused React import from src/components/footer/footer.jsx
+- [x] Remove unused React import from src/components/hero/hero.jsx and fix unescaped entities
+- [x] Remove unused React import from src/components/mywork/mywork.jsx
+- [x] Change React import to hooks only in src/components/navbar/navbar.jsx
+- [x] Remove unused React import from src/components/services/services.jsx
+- [x] Run npm run lint to verify fixes
