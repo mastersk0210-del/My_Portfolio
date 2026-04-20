@@ -39,10 +39,23 @@ const KNOWLEDGE = [
     ]
   },
   {
-    topics: ['linkedin', 'github', 'social', 'profile', 'instagram', 'connect'],
+    topics: ['linkedin', 'linked in'],
     responses: [
-      "Find Srikaran on LinkedIn: https://www.linkedin.com/in/srikaran-sankar/ and GitHub: https://github.com/mastersk0210-del",
-      "Connect with him on LinkedIn: https://www.linkedin.com/in/srikaran-sankar/ or GitHub: https://github.com/mastersk0210-del",
+      "Here's Srikaran's LinkedIn profile: https://www.linkedin.com/in/srikaran-sankar/",
+      "Connect with Srikaran on LinkedIn: https://www.linkedin.com/in/srikaran-sankar/",
+    ]
+  },
+  {
+    topics: ['github', 'git hub', 'repository', 'repo'],
+    responses: [
+      "Here's Srikaran's GitHub: https://github.com/mastersk0210-del",
+      "Check out his projects on GitHub: https://github.com/mastersk0210-del",
+    ]
+  },
+  {
+    topics: ['social', 'profile', 'instagram', 'connect'],
+    responses: [
+      "Connect with Srikaran on LinkedIn: https://www.linkedin.com/in/srikaran-sankar/ or GitHub: https://github.com/mastersk0210-del",
     ]
   },
   {
