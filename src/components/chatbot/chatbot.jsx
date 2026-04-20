@@ -94,6 +94,12 @@ const KNOWLEDGE = [
     ]
   },
   {
+    topics: ['career goal', 'goal', 'ambition', 'future plan', 'aspiration', 'long term', 'where do you see', 'five years', 'vision'],
+    responses: [
+      "Srikaran's immediate goal is to grow as a Machine Learning Engineer, working on real-world AI problems that create measurable business value. In the medium term, he wants to specialise deeper in NLP and AI-driven decision systems, building on his Amazon experience and MSc research. Long term, he sees himself leading AI initiatives — either as a tech lead or in an architect role — where he can shape how organisations use data intelligently. Essentially, he wants to bridge the gap between cutting-edge AI research and practical business solutions.",
+    ]
+  },
+  {
     topics: ['different', 'unique', 'stand out', 'sets apart', 'special', 'why you', 'why hire', 'better than', 'what makes'],
     responses: [
       "What sets Srikaran apart is that he combines real industry experience with academic depth. He's built production ML pipelines at Amazon that delivered measurable results, while simultaneously completing his MSc in AI. He works end-to-end — from data pipelines to model building to deployment — so he can own a problem fully rather than working in just one layer. And he always focuses on business impact, not just the code.",
