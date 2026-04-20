@@ -1,8 +1,7 @@
 .sidebar-toggle {
     position: fixed;
     left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20px;
     z-index: 200;
     cursor: pointer;
     background: rgba(31, 0, 22, 0.85);
