@@ -34,15 +34,15 @@ const KNOWLEDGE = [
   {
     topics: ['contact', 'email', 'phone', 'reach', 'message', 'whatsapp', 'call'],
     responses: [
-      "Reach Srikaran at mastersk0210@gmail.com or WhatsApp +353 894002480. He's based in Dublin, Ireland!",
-      "You can email Srikaran at mastersk0210@gmail.com or call/WhatsApp him at +353 894002480.",
+      "Reach Srikaran at mailto:mastersk0210@gmail.com or WhatsApp: https://wa.me/353894002480. He's based in Dublin, Ireland!",
+      "Email: mailto:mastersk0210@gmail.com | WhatsApp: https://wa.me/353894002480",
     ]
   },
   {
     topics: ['linkedin', 'github', 'social', 'profile', 'instagram', 'connect'],
     responses: [
-      "Find Srikaran on LinkedIn at linkedin.com/in/srikaran-sankar and GitHub at github.com/mastersk0210-del.",
-      "Connect with him on LinkedIn (linkedin.com/in/srikaran-sankar), GitHub (github.com/mastersk0210-del), or Instagram!",
+      "Find Srikaran on LinkedIn: https://www.linkedin.com/in/srikaran-sankar/ and GitHub: https://github.com/mastersk0210-del",
+      "Connect with him on LinkedIn: https://www.linkedin.com/in/srikaran-sankar/ or GitHub: https://github.com/mastersk0210-del",
     ]
   },
   {
@@ -62,8 +62,8 @@ const KNOWLEDGE = [
   {
     topics: ['resume', 'cv', 'download'],
     responses: [
-      "You can download Srikaran's resume directly from the home page — just click the 'My Resume' button!",
-      "His resume is available on the portfolio homepage. Click 'My Resume' to download it!",
+      "You can download Srikaran's resume here: https://srithings.info/Srikaran_Sankar_Resume.pdf",
+      "Here's a direct link to his resume: https://srithings.info/Srikaran_Sankar_Resume.pdf",
     ]
   },
   {
@@ -124,13 +124,17 @@ function getReply(input) {
 }
 
 function renderWithLinks(text) {
-  const urlRegex = /(https?:\/\/[^\s]+)/g
+  const urlRegex = /((?:https?|mailto):\/\/[^\s]+|mailto:[^\s]+)/g
   const parts = text.split(urlRegex)
-  return parts.map((part, i) =>
-    urlRegex.test(part)
-      ? <a key={i} href={part} target="_blank" rel="noreferrer" style={{color:'#b97dff', textDecoration:'underline'}}>{part}</a>
-      : part
-  )
+  return parts.map((part, i) => {
+    if (/^mailto:/.test(part)) {
+      return <a key={i} href={part} style={{color:'#b97dff', textDecoration:'underline'}}>{part.replace('mailto:','')}</a>
+    }
+    if (/^https?:\/\//.test(part)) {
+      return <a key={i} href={part} target="_blank" rel="noreferrer" style={{color:'#b97dff', textDecoration:'underline'}}>{part}</a>
+    }
+    return part
+  })
 }
 
 const SUGGESTIONS = ['Skills', 'Projects', 'Contact', 'Experience', 'Services']
