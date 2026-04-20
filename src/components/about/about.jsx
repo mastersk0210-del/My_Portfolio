@@ -20,13 +20,38 @@ const About = () => {
                 <p>My diverse background in web technologies and programming languages makes me a versatile in the field of development too, capable of tackling a wide range of challenges.</p>
             </div>
             <div className="about-skills">
-                <div className="about-skill"><p>Data Analytics</p><hr style={{width:"70%"}} /></div>
-                <div className="about-skill"><p>Machine Learning</p><hr style={{width:"60%"}} /></div>
-                <div className="about-skill"><p>Visualizations</p><hr style={{width:"80%"}} /></div>
-                <div className="about-skill"><p>Java/ Python / R</p><hr style={{width:"70%"}} /></div>
-                <div className="about-skill"><p>Artificial Intelligence</p><hr style={{width:"65%"}} /></div>
-                <div className="about-skill"><p>Natural Language Processing</p><hr style={{width:"60%"}} /></div>
-                <div className="about-skill"><p>Deep Learning</p><hr style={{width:"65%"}} /></div>
+                <div className="about-skill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="pandas" className="skill-logo"/>
+                  <p>Data Analytics</p><hr style={{width:"70%"}} />
+                </div>
+                <div className="about-skill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" className="skill-logo"/>
+                  <p>Machine Learning</p><hr style={{width:"60%"}} />
+                </div>
+                <div className="about-skill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" className="skill-logo"/>
+                  <p>Visualizations</p><hr style={{width:"80%"}} />
+                </div>
+                <div className="about-skill">
+                  <div className="skill-logo-group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="java"/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python"/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="r"/>
+                  </div>
+                  <p>Java / Python / R</p><hr style={{width:"70%"}} />
+                </div>
+                <div className="about-skill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikitlearn" className="skill-logo"/>
+                  <p>Artificial Intelligence</p><hr style={{width:"65%"}} />
+                </div>
+                <div className="about-skill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/huggingface/huggingface-original.svg" alt="huggingface" className="skill-logo"/>
+                  <p>Natural Language Processing</p><hr style={{width:"60%"}} />
+                </div>
+                <div className="about-skill">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="pytorch" className="skill-logo"/>
+                  <p>Deep Learning</p><hr style={{width:"65%"}} />
+                </div>
             </div>
         </div>
       </div>

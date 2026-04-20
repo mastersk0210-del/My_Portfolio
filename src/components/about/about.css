@@ -34,12 +34,29 @@
 }
 .about-skill{
     display: flex;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
     transition: 0.3s;
 }
+.skill-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.skill-logo-group {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-shrink: 0;
+}
+.skill-logo-group img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
 .about-skill p{
-    min-width: 130px;
+    min-width: 200px;
     font-size: 20px;
     font-weight: 500;
 }
