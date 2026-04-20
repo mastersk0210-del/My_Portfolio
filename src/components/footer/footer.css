@@ -22,13 +22,13 @@
     gap: 20px;
     padding: 15px 20px;
     border-radius: 50px;
-    background: #32323B;
+    background: var(--input-bg);
 }
 .footer-email-input input{
     outline: none;
     border: none;
     background: transparent;
-    color: #a0a0a0;
+    color: var(--input-text);
     font-family: Outfit;
     font-size: 18px;
 }

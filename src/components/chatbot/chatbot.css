@@ -32,7 +32,7 @@
 .chatbot-box {
     width: 340px;
     height: 480px;
-    background: #1a0a1e;
+    background: var(--chatbot-bg);
     border-radius: 16px;
     border: 1px solid rgba(180, 21, 255, 0.3);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -122,10 +122,10 @@
 }
 
 .chatbot-message.assistant {
-    background: rgba(255,255,255,0.08);
+    background: var(--chatbot-msg-bg);
     align-self: flex-start;
     border-bottom-left-radius: 4px;
-    color: #e0e0e0;
+    color: var(--text-muted);
 }
 
 .chatbot-typing {
@@ -178,18 +178,18 @@
 
 .chatbot-input-area {
     padding: 12px;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid var(--chatbot-border);
     display: flex;
     gap: 8px;
 }
 
 .chatbot-input-area input {
     flex: 1;
-    background: rgba(255,255,255,0.08);
+    background: var(--chatbot-input-bg);
     border: 1px solid rgba(180,21,255,0.3);
     border-radius: 20px;
     padding: 8px 14px;
-    color: white;
+    color: var(--text);
     font-size: 13px;
     outline: none;
     font-family: Outfit;
@@ -200,7 +200,7 @@
     border-color: #B415FF;
 }
 
-.chatbot-input-area input::placeholder { color: rgba(255,255,255,0.35); }
+.chatbot-input-area input::placeholder { color: var(--chatbot-placeholder); }
 
 .chatbot-input-area button {
     width: 38px;
