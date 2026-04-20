@@ -10,7 +10,7 @@ const Hero = () => {
       <p>I am a passinato data analyst with strong development skills and professional experience, I specialize in leveraging data insights to drive strategic decision-making and enhance business performance.</p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
-        <button className='hero-resume'><a className="a" href='src/assets/Srikaran_Sankar_Resume.pdf'>My Resume</a></button>
+        <button className='hero-resume'><a className="a" href='/Srikaran_Sankar_Resume.pdf' target="_blank" rel="noreferrer">My Resume</a></button>
         </div>
         </div>
   )
