@@ -94,6 +94,13 @@ const KNOWLEDGE = [
     ]
   },
   {
+    topics: ['different', 'unique', 'stand out', 'sets apart', 'special', 'why you', 'why hire', 'better than', 'what makes'],
+    responses: [
+      "What sets Srikaran apart is that he combines real industry experience with academic depth. He's built production ML pipelines at Amazon that delivered measurable results, while simultaneously completing his MSc in AI. He works end-to-end — from data pipelines to model building to deployment — so he can own a problem fully rather than working in just one layer. And he always focuses on business impact, not just the code.",
+      "Srikaran brings a rare combination: hands-on industry experience building production ML systems at Amazon, backed by an MSc in AI. He operates end-to-end across the full stack — data, models, and deployment — and keeps business impact at the centre of every solution he builds.",
+    ]
+  },
+  {
     topics: ['appointment', 'meeting', 'schedule', 'book', 'call', 'discuss', 'consultation', 'chat', 'connect', 'availability'],
     responses: [
       "To book an appointment with Srikaran, reach out via email: [mastersk0210@gmail.com](mailto:mastersk0210@gmail.com) or WhatsApp: [+353 894002480](https://wa.me/353894002480) — he'll get back to you shortly!",
