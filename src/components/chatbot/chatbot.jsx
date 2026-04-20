@@ -75,8 +75,8 @@ const KNOWLEDGE = [
   {
     topics: ['resume', 'cv', 'download'],
     responses: [
-      "You can download Srikaran's resume here: https://srithings.info/Srikaran_Sankar_Resume.pdf",
-      "Here's a direct link to his resume: https://srithings.info/Srikaran_Sankar_Resume.pdf",
+      "You can download Srikaran's resume here: [Download Resume](https://srithings.info/Srikaran_Sankar_Resume.pdf)",
+      "Here's a direct link to his resume: [Download Resume](https://srithings.info/Srikaran_Sankar_Resume.pdf)",
     ]
   },
   {
@@ -137,17 +137,24 @@ function getReply(input) {
 }
 
 function renderWithLinks(text) {
-  const urlRegex = /((?:https?|mailto):\/\/[^\s]+|mailto:[^\s]+)/g
-  const parts = text.split(urlRegex)
-  return parts.map((part, i) => {
-    if (/^mailto:/.test(part)) {
-      return <a key={i} href={part} style={{color:'#b97dff', textDecoration:'underline'}}>{part.replace('mailto:','')}</a>
+  const result = []
+  let last = 0, match, i = 0
+
+  const fullRegex = /\[([^\]]+)\]\(((?:https?|mailto)[^)]+)\)|((?:https?|mailto):\/\/[^\s]+|mailto:[^\s]+)/g
+  while ((match = fullRegex.exec(text)) !== null) {
+    if (match.index > last) result.push(text.slice(last, match.index))
+    if (match[1]) {
+      const isMailto = /^mailto:/.test(match[2])
+      result.push(<a key={i++} href={match[2]} target={isMailto ? undefined : '_blank'} rel="noreferrer" style={{color:'#b97dff', textDecoration:'underline'}}>{match[1]}</a>)
+    } else {
+      const href = match[3]
+      const isMailto = /^mailto:/.test(href)
+      result.push(<a key={i++} href={href} target={isMailto ? undefined : '_blank'} rel="noreferrer" style={{color:'#b97dff', textDecoration:'underline'}}>{isMailto ? href.replace('mailto:','') : href}</a>)
     }
-    if (/^https?:\/\//.test(part)) {
-      return <a key={i} href={part} target="_blank" rel="noreferrer" style={{color:'#b97dff', textDecoration:'underline'}}>{part}</a>
-    }
-    return part
-  })
+    last = match.index + match[0].length
+  }
+  if (last < text.length) result.push(text.slice(last))
+  return result
 }
 
 const SUGGESTIONS = ['Skills', 'Projects', 'Contact', 'Experience', 'Services']
