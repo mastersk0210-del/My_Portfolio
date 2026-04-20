@@ -12,7 +12,8 @@ const mywork_data = [
     {
         w_no:2,
         w_name:"Web design",
-        w_img:project2_img
+        w_img:project2_img,
+        w_link:"https://skill-gap-severity-prediction-uemsqqhhkwvaxmkjx7dpta.streamlit.app/"
     },
     {
         w_no:3,
