@@ -123,6 +123,16 @@ function getReply(input) {
   return FALLBACKS[Math.floor(Math.random() * FALLBACKS.length)]
 }
 
+function renderWithLinks(text) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g
+  const parts = text.split(urlRegex)
+  return parts.map((part, i) =>
+    urlRegex.test(part)
+      ? <a key={i} href={part} target="_blank" rel="noreferrer" style={{color:'#b97dff', textDecoration:'underline'}}>{part}</a>
+      : part
+  )
+}
+
 const SUGGESTIONS = ['Skills', 'Projects', 'Contact', 'Experience', 'Services']
 
 const Chatbot = () => {
@@ -167,7 +177,7 @@ const Chatbot = () => {
           <div className="chatbot-messages">
             {messages.map((msg, i) => (
               <div key={i} className={`chatbot-message ${msg.role}`}>
-                <p>{msg.content}</p>
+                <p>{renderWithLinks(msg.content)}</p>
               </div>
             ))}
             <div ref={messagesEndRef} />
