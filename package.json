@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
+    "compromise": "^14.15.0",
     "react": "^18.3.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",

@@ -152,6 +152,30 @@
     30% { transform: translateY(-6px); }
 }
 
+.chatbot-suggestions {
+    padding: 0 12px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chatbot-suggestions button {
+    background: rgba(180, 21, 255, 0.15);
+    border: 1px solid rgba(180, 21, 255, 0.4);
+    border-radius: 20px;
+    color: #d0a0ff;
+    font-size: 12px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: Outfit;
+}
+
+.chatbot-suggestions button:hover {
+    background: rgba(180, 21, 255, 0.3);
+    color: white;
+}
+
 .chatbot-input-area {
     padding: 12px;
     border-top: 1px solid rgba(255,255,255,0.08);
