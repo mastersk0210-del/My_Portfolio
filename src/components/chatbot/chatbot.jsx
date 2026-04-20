@@ -94,6 +94,13 @@ const KNOWLEDGE = [
     ]
   },
   {
+    topics: ['appointment', 'meeting', 'schedule', 'book', 'call', 'discuss', 'consultation', 'chat', 'connect', 'availability'],
+    responses: [
+      "To book an appointment with Srikaran, reach out via email: [mastersk0210@gmail.com](mailto:mastersk0210@gmail.com) or WhatsApp: [+353 894002480](https://wa.me/353894002480) — he'll get back to you shortly!",
+      "You can schedule a meeting with Srikaran by emailing [mastersk0210@gmail.com](mailto:mastersk0210@gmail.com) or messaging him on WhatsApp: [+353 894002480](https://wa.me/353894002480) 📅",
+    ]
+  },
+  {
     topics: ['thank', 'thanks', 'appreciate', 'great', 'awesome', 'helpful'],
     responses: [
       "You're welcome! 😊 Feel free to ask anything else about Srikaran.",
