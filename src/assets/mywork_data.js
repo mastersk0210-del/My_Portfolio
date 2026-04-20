@@ -7,7 +7,8 @@ const mywork_data = [
     {
         w_no:1,
         w_name:"Web design",
-        w_img:project1_img
+        w_img:project1_img,
+        w_link:"https://srithings.info/"
     },
     {
         w_no:2,
