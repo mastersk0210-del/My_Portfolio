@@ -55,8 +55,8 @@ const KNOWLEDGE = [
   {
     topics: ['certif', 'qualif', 'degree', 'education', 'study', 'course'],
     responses: [
-      "Srikaran holds 10+ certifications in data science, machine learning, AI, and related fields.",
-      "He has 10+ professional certifications covering machine learning, AI, data science, and analytics.",
+      "Srikaran holds 10+ certifications in data science, machine learning, AI, and related fields. 🔗 View them here: https://www.linkedin.com/in/srikaran-sankar/details/certifications/",
+      "He has 10+ professional certifications covering machine learning, AI, data science, and analytics. 🔗 See all certifications: https://www.linkedin.com/in/srikaran-sankar/details/certifications/",
     ]
   },
   {
