@@ -6,8 +6,8 @@ const KNOWLEDGE = [
   {
     topics: ['skill', 'know', 'tech', 'expertise', 'specialise', 'proficient', 'language', 'python', 'java', 'machine learning', 'ml', 'ai', 'deep learning', 'nlp', 'data', 'analytics'],
     responses: [
-      "Srikaran specialises in Machine Learning, Deep Learning, NLP, and Data Analytics. He's proficient in Python, Java, and R — and also does Web Development! 🔗 View his certifications: https://www.linkedin.com/in/srikaran-sankar/details/certifications/",
-      "His core skills include: Data Analytics, Machine Learning, AI, NLP, Deep Learning, Data Visualization, Python/Java/R, and Web Development. 🔗 See his certifications here: https://www.linkedin.com/in/srikaran-sankar/details/certifications/",
+      "Srikaran specialises in Machine Learning, Deep Learning, NLP, and Data Analytics. He's proficient in Python, Java, and R — and also does Web Development!",
+      "His core skills include: Data Analytics, Machine Learning, AI, NLP, Deep Learning, Data Visualization, Python/Java/R, and Web Development.",
     ]
   },
   {
